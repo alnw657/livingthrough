@@ -1,0 +1,7 @@
+{
+  "name": "livingthrough",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

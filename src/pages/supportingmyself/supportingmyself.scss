@@ -1,0 +1,57 @@
+page-supportingmyself {
+  .featured-content {
+    background-color: #0099ff;
+    padding:5px 15px;
+    margin: 0px 0px 15px 0px;
+    color:#fff;
+    box-shadow: 1px 2px 10px #555;
+
+  }
+  .featured {
+    background-color: #40bf40;
+    padding:5px 15px;
+    margin: 15px 0px;
+    color:#fff;
+    box-shadow: 1px 2px 10px #ccc;
+  }
+  .bottom-padding{
+    padding-bottom:10px;
+  }
+  ion-card {
+    position: relative;
+    margin:0px;
+    padding:0px;
+    width:100%;
+  }
+  .card-title-gethelp-page {
+    position: absolute;
+    top: 36%;
+    font-size: 1.7em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle-gethelp-page {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+
+}
+
+$button-padding-start: 0px;
+
+.bar-footer-supportingmyselfpage{
+    bottom:0;
+    height:120px;
+    width:100%;;
+    padding:5px 10px 10px 5px;
+    margin:0px;
+    margin-bottom:60px;
+    background-color: #fff;
+ }
+

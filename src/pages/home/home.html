@@ -1,0 +1,112 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle class="sideMenu">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>
+      <img class="headerImage" src="../assets/imgs/logo_white.png"/>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content scrollbar-y-auto>
+<ion-content>
+  
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col col-12>
+        <div class="image-main">
+          <img src="../assets/imgs/meditation.jpg"/>
+        </div>
+      </ion-col>
+    </ion-row>
+<!--
+    <ion-row>
+        <div class="hp-content">
+          <p>
+            PAIN IS NOT ALWAYS OBVIOUS
+          </p>
+          <p>
+            Everyday friends, family and co-workers struggle with emotional pain. 
+            And for some, it's too difficult to talk about the pain, thoughts of suicide and the need for help.
+            Though the warning signs can be subtle, they are there. 
+            By recognizing these signs, knowing how to start a conversation and where to turn for help, 
+            you have the power to make a difference- the power to save a life.
+          </p>
+        </div>
+      </ion-row>
+   
+    <ion-row>
+
+        <ion-col col-6>
+          <ion-card>
+            <div class="card-title"><button ion-button full color="light" class="homebutton left">Support Yourself</button></div>
+          </ion-card>
+        </ion-col>
+  
+        <ion-col col-6>
+          <ion-card>
+            <div class="card-title"><button ion-button full color="light" class="homebutton left">Support Others</button></div>
+          </ion-card>
+        </ion-col>
+  
+      </ion-row>
+  
+      <ion-row>
+  
+        <ion-col col-6>
+          <ion-card>
+            <div class="card-title"><button ion-button full color="light" class="homebutton left">Safety Plan</button></div>
+          </ion-card>
+        </ion-col>
+  
+        <ion-col col-6>
+          <ion-card>
+            <div class="card-title"><button ion-button full color="light" class="homebutton left">Self Assessment</button></div>
+          </ion-card>
+        </ion-col>
+  
+      </ion-row>
+
+      <ion-row>
+  
+          <ion-col col-6>
+            <ion-card>
+              <div class="card-title"><button ion-button full color="light" class="homebutton left">Awareness</button></div>
+            </ion-card>
+          </ion-col>
+    
+          <ion-col col-6>
+            <ion-card>
+              <div class="card-title"><button ion-button full color="light" class="homebutton left">About Us</button></div>
+            </ion-card>
+          </ion-col>
+    
+        </ion-row>
+ -->
+  </ion-grid>
+
+  <div class="padding">
+      
+    <div class="featured-content">
+      <h6>Awareness is the first step towards suicide prevention.</h6>
+      <h6>Suicide is real, and we are here to fight against it.</h6>
+      <button class="margin" ion-button block color="light"  (click)="openAwarenessPage()">Awareness</button>
+    </div>
+    <div class="getSupport">
+      <h6>Getting support for yourself or other people is easy.</h6>
+      <h6>Together we can do more.</h6>
+      <button class="margin" ion-button block color="light"  (click)="openGetSupportPage()">Get Support</button>
+    </div>
+    <div class="aboutUs">
+      <h6>Living Through is a suicide prevention approach.</h6>
+      <h6>Get to know more about who we are.</h6>
+      <button class="margin" ion-button block color="light"  (click)="openAboutPage()">About Us</button>
+    </div>
+  </div>
+</ion-content>
+ 

@@ -1,0 +1,14 @@
+
+ 
+<ion-content>
+ 
+    <ion-list no-padding text-wrap>
+        <ion-item text-wrap text-justify *ngFor="let location of locations.data">
+            <h1 class="headerTitle">{{location.title}}</h1>
+            <h2 class="headerTitle">{{location.description}}</h2>
+            <p class="headerTitle">{{location.distance}} kilometers</p>
+            <button ion-button block large color="success" (click)="openWithSystemBrowser(location.url)">Website</button>
+        </ion-item>
+    </ion-list>
+ 
+</ion-content>

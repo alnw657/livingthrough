@@ -1,0 +1,282 @@
+<!--
+  Generated template for the SafetyplanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      Safety Plan
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="safetyplan-page">
+  
+  <ion-card class="safetyplan-featured">
+    <img src="../assets/imgs/write.png"/>
+    <div class="card-title-safetyplan-page">Welcome</div>
+    <div class="card-subtitle-safetyplan-page">Self Care: Checking In</div>
+  </ion-card>
+
+  <ion-card class="resources">
+    <ion-card-header><h2>Useful Resources</h2></ion-card-header>
+  
+    <ion-card-content>
+      <p>
+        If you think a life is in immediate danger <strong>Call 000 Now</strong>.
+        <br>
+        For <strong>online chating</strong> please visit our website.
+        <br>
+        <strong>Lifeline Australia:</strong> 13 11 14
+        <br>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="featured">
+    <div>
+      <h6>My Safety Plan is designed to organise your thoughts in a immediate moment and devise a plan to highlight the key points for suicide risks recognition.</h6>
+      <p>Revise your plan constantly to ensure that you will be safe.</p>
+      <p>Share this plan if you are helping a friend.</p>
+    </div>
+
+  </div>
+  
+
+  <div class="full-height safetyplan-1">
+    <div padding>
+      <h1>Immediate Safety</h1>
+      <p>To stay safe, what needs to be done now? And in what order?</p>
+    </div>
+    
+    <ion-list>
+  
+      <!-- <ion-item *ngFor="let item of Items">
+        <p>First: {{item.last}}</p>
+        <p>Second: {{item.second}}</p>
+      </ion-item> -->
+
+      <ion-item>
+        <ion-label stacked>1</ion-label>
+        <ion-input type="text" value=""[(ngModel)]="immediate1">></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label stacked>2</ion-label>
+        <ion-input type="text"  value=""[(ngModel)]="immediate2">></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>3</ion-label>
+        <ion-input type="text"  value=""[(ngModel)]="immediate3">></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>4</ion-label>
+        <ion-input type="text"  value="" [(ngModel)]="immediate4"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>5</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="immediate5"></ion-input>
+      </ion-item>
+        
+    </ion-list>
+    <ion-grid>
+      <ion-row justify-content-center align-items-center>
+        <p>Scroll down to continue <ion-icon name="arrow-dropdown"></ion-icon></p>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="full-height safetyplan-2">
+    <div padding>
+      <h1>Future Safety</h1>
+      <p>How will I recognise if I am ever at risk again in the future?</p>
+      <p>Add a feature to add titles</p>
+    </div>
+    
+    <ion-list>
+  
+      <ion-item>
+        <ion-label stacked>1</ion-label>
+        <ion-input type="text" value=""[(ngModel)]="future1"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label stacked>2</ion-label>
+        <ion-input type="text"  value=""[(ngModel)]="future2"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>3</ion-label>
+        <ion-input type="text"  value=""[(ngModel)]="future3"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>4</ion-label>
+        <ion-input type="text"  value=""[(ngModel)]="future4"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>5</ion-label>
+        <ion-input type="text" value=""[(ngModel)]="future5"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-grid>
+      <ion-row justify-content-center align-items-center>
+        <p>Scroll down to continue <ion-icon name="arrow-dropdown"></ion-icon></p>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="full-height safetyplan-3">
+    <div padding>
+      <h1>Future Safety</h1>
+      <p>If I notice these signs in myself...</p>
+    </div>
+    <ion-list>
+  
+        <ion-item>
+          <ion-label stacked>I will talk to</ion-label>
+          <ion-input type="text" value=""[(ngModel)]="future6"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label stacked>I will seek Help from</ion-label>
+          <ion-input type="text" value=""[(ngModel)]="future7"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label stacked text-wrap>I will calm and comfort myself by</ion-label>
+          <ion-input type="text" value=""[(ngModel)]="future8"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label stacked text-wrap>I will distract myself by</ion-label>
+          <ion-input type="text" value=""[(ngModel)]="future9"></ion-input>
+        </ion-item>
+
+      <ion-grid>
+          <ion-row justify-content-center align-items-center>
+            <p>Scroll down to continue <ion-icon name="arrow-dropdown"></ion-icon></p>
+          </ion-row>
+      </ion-grid>
+      </ion-list>
+  </div>
+
+  <div class="full-height safetyplan-3-2">
+    <div padding>
+      <h1>Future Safety</h1>
+      <p>If I notice these signs in myself...</p>
+    </div>
+
+    <ion-list>
+      <ion-item>
+        <ion-label stacked text-wrap>I will go to these place to feel safe</ion-label>
+        <ion-input type="text" value=""[(ngModel)]="future10"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked text-wrap>I will remeber these things or people who helped me on the past</ion-label>
+        <ion-input type="text" value=""[(ngModel)]="future11"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked text-wrap>My safe alcohol / drug limit is</ion-label>
+        <ion-input type="text" value=""[(ngModel)]="future12"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked text-wrap >I will keep myself withing these limits by</ion-label>
+        <ion-input type="text" value=""[(ngModel)]="future13"></ion-input>
+      </ion-item>
+
+      <ion-grid>
+        <ion-row justify-content-center align-items-center>
+          <p>Scroll down to continue <ion-icon name="arrow-dropdown"></ion-icon></p>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+  </div>
+<!--
+  <div class="full-height align-center safetyplan-4" justify-content-center align-items-center>
+      <form
+      [formGroup]="form"
+      (ngSubmit)="sendMessage()" padding>
+
+      <ion-list>
+
+
+         <ion-item margin-bottom>
+            <ion-label>To:</ion-label>
+            <ion-input
+               type="email"
+               formControlName="to"></ion-input>
+         </ion-item>
+
+
+         <ion-item margin-bottom>
+            <ion-label>Cc:</ion-label>
+            <ion-input
+               type="email"
+               formControlName="cc"></ion-input>
+         </ion-item>
+
+
+         <ion-item margin-bottom>
+            <ion-label>Bcc:</ion-label>
+            <ion-input
+               type="email"
+               formControlName="bcc"></ion-input>
+         </ion-item>
+
+         <ion-item margin-bottom>
+            <ion-label>Subject:</ion-label>
+            <ion-input
+               type="string"
+               formControlName="subject"></ion-input>
+         </ion-item>
+
+
+         <ion-item margin-bottom>
+            <ion-label>Message:</ion-label>
+            <ion-textarea
+               formControlName="message"></ion-textarea>
+         </ion-item>
+
+
+         <button
+            ion-button
+            color="light"
+            outiline
+            text-center
+            block [disabled]="!form.valid">Send your message</button>
+      </ion-list>
+   </form>
+  -->
+    <div class="full-height align-center safetyplan-4">
+    <div padding>
+      <h1>Well Done!</h1>
+      <p>Now submit it to your email:</p>
+    </div>
+    <ion-list padding>
+        <ion-item>
+          <ion-input type="email" value=""  placeholder="Please enter your email address" [(ngModel)]="to"></ion-input>
+        </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button color="light" block (click)="send()" >Send</button>
+      <!-- "add(safetyplan)" -->
+    </div>
+    
+  </div>
+
+    
+</ion-content>

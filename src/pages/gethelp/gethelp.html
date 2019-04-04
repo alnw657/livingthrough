@@ -1,0 +1,104 @@
+<!--
+  Generated template for the GethelpPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" class="sideMenu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>
+      Get Support
+    </ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="card-gethelp-page">
+
+  <ion-card class="gethelp-header">
+    <img src="../assets/imgs/team.png"/>
+    <div class="card-title-gethelp-page">Get Support</div>
+    <div class="card-subtitle-gethelp-page">Let's change our thoughts and 
+      rebuild the hope for future.</div>
+  </ion-card>
+
+  <div class="featured1">
+    <h4>Be Aware</h4>
+  </div>
+  
+  <div>
+    <ion-card>
+      <img src="../assets/imgs/ok.jpg"/>
+      
+      <ion-card-content class="gethelp-content">
+        <ion-card-title>
+          There is no shame
+        </ion-card-title>
+        
+        <p>
+          Regardless of your race, religion, color or sexual orientation. It is okay to talk to someone about your feelings.
+        </p><br>
+        <p>
+          There are should not be stigmas, suicide is REAL and ranked in the top 10 reason of death in Australia. (Australian Bureau of Statics)
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="featured-content">
+      <h5>"Consider a group of 1,000 people, randomly selected from the world’s population. Each year, four of these people will commit suicide, seven will make plans to kill themselves, and twenty will seriously consider suicide."</h5>
+    </div>
+  </div>
+  
+  <div class="bottom-padding">
+    <div class="featured1">
+      <h4>Start A Conversation</h4>
+    </div>  
+    <ion-card>
+      <img src="../assets/imgs/phone.jpg"/>
+     
+      <ion-card-content class="gethelp-content">
+        <ion-card-title>
+          Connect
+        </ion-card-title>
+        
+        <p>
+          Starting a conversation can save lives. Wheather you are the one suffocating or not, connecting with people and sharing thoughts are essential for a healthier mind.
+        </p>
+        <br>
+        <p>
+          Start a conversation with someone you trust, or connect to our website to talk to someone online: https://www.livingthrough.info or https://livingthrough.info
+          <br><br>
+          Visit <strong>Supporting Myself</strong> to know more about how you can live through this. 
+          <br><br>
+          or visit <strong>Supporting Others</strong> to know more about how you can help someone else.
+        </p>
+      </ion-card-content>
+    </ion-card> 
+  </div>  
+    
+  <div class="bar-footer">
+    
+    <button ion-button icon-end block padding color="dark" medium  outline (click)="openSupportingMyselfPage()">
+        Supporting Myself
+        <ion-icon name='arrow-forward'></ion-icon>
+    </button>
+    
+    <button ion-button icon-end  block padding color="dark" medium outline  (click)="openSupportingOthersPage()">
+      Supporting Others
+      <ion-icon name='arrow-forward'></ion-icon>
+    </button>
+
+  </div>
+
+</ion-content>
+
+

@@ -1,0 +1,160 @@
+<!--
+  Generated template for the Question1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Survey Questions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+
+    <ion-list radio-group text-wrap [(ngModel)]="surveyanswers.question1">
+      <ion-list-header>
+        <h1>1. Have you wished you were dead or wished you could go to sleep and not wake up?</h1>
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio value = "0"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Yes - Within the past month</ion-label>
+        <ion-radio value = "1"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio value = "2"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-list radio-group text-wrap [(ngModel)]="surveyanswers.question2" >
+      <ion-list-header>
+        <h1>2. Have you actually had any thougts of killing yourself?</h1>
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio value="0"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Yes - Within the past month</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio checked="true" value="2" ></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-list radio-group text-wrap [(ngModel)]="surveyanswers.question2_1" >
+      <ion-list-header>
+        <h1> 2.1. Have you been thinking about how you might do this? (Skip if "No" was chosen in Question 2)</h1>
+        <br>
+        <br>
+        E.g "I thought about taking an overdose but I never made a specific plan as to when or where or how I would actually do it... and I would never go through with it."
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio value="0"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Yes - Within the past month</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio checked="true" value="2" ></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-list radio-group text-wrap [(ngModel)]="surveyanswers.question2_2" >
+      <ion-list-header>
+        <h1> 2.2. Have you had this thoughts and had some intentions of acting on them? (Skip if "No" was chosen in Question 2)</h1>
+        <br>
+        <br>
+        As opposed to "I have the thoughts but I definitely will not do anything about them."
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio value="0"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Yes - Within the past month</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio checked="true" value="2"  ></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-list radio-group text-wrap [(ngModel)]="surveyanswers.question2_3" >
+      <ion-list-header>
+        <h1>2.3 Have you started to work out or worked out the details of how to kill yourself? Do you intend to carry out this plan? (Skip if "No" was chosen in Question 2)</h1>
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio value="0"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Yes - Within the past month</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio checked="true" value="2" ></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-list radio-group text-wrap [(ngModel)]="surveyanswers.question3">
+      <ion-list-header>
+        <h1>3. Have you done anything, or started to do anything, or prepared  do anything to end your life?</h1>
+        <br>
+        <br>
+        Examples: Colleted pills, obtained a gun, gave away valuables, wrote or will write a suicide note, took out pills but didn't swallow any, held a gun but changed your mind or it was grabbed from your hand, went to the roof but didn't jump; or actually tried to shoot yourself or took pills, cut yourself, or tried to hang yourself, etc.   Have you wished you were dead or wished you could go to sleep and not wake up?
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio value="0"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Yes - Within the last 3 months</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio checked="true" value="2" ></ion-radio>
+      </ion-item>
+    </ion-list>
+
+
+    <div class="footer">
+      <div padding>
+        <button ion-button block color="light" (click)="openResultModal()">SHOW MY RESULT</button>
+      </div>
+    </div>
+
+</ion-content>

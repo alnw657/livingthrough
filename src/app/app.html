@@ -1,0 +1,20 @@
+<ion-menu type="overlay" [content]="content">
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <img class="headerImage" src="../assets/imgs/logo_white.png"/>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content scrollbar-y-auto>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" [class.activeHighlight]="checkActive(p)" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

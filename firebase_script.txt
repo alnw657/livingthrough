@@ -1,0 +1,14 @@
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDblHt1oK8k5ti1tTL346JCwdH51ZQfeaM",
+    authDomain: "livingtrough-40e8e.firebaseapp.com",
+    databaseURL: "https://livingtrough-40e8e.firebaseio.com",
+    projectId: "livingtrough-40e8e",
+    storageBucket: "livingtrough-40e8e.appspot.com",
+    messagingSenderId: "317837841640"
+  };
+  firebase.initializeApp(config);
+</script>

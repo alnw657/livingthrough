@@ -1,0 +1,62 @@
+page-home {
+
+  max-height: 100%;
+
+  .featured-content {
+    background-color: #00ace6;
+    padding:10px 15px 20px 15px;
+    color:#fff;
+    margin:5px 10px;
+    box-shadow: 1px 2px 10px #555;
+
+  }
+  .getSupport{
+    background-color: #ac3973;
+    padding:10px 15px 20px 15px;
+    color:#fff;
+    margin:10px 10px;
+    box-shadow: 1px 2px 10px #555;
+  }
+  .aboutUs{
+    background-color: #00b300;
+    padding:10px 15px 20px 15px;
+    color:#fff;
+    margin:10px 10px;
+    box-shadow: 1px 2px 10px #555;
+  }
+  .margin {
+    margin-top:20px;
+  }
+
+  .card-title-homepage {
+    position: relative;
+    //top: 36%;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    color: white;
+    background-color: #000;
+    text-align: center !important;
+    display: flex!important;
+    align-content: center!important;
+    align-items: center!important;
+  }
+  
+  .homebutton {
+    position: relative;
+    width:100%;
+    height:100px;
+    color: white;
+    background-color: #293249 !important
+  }
+  
+  .sideMenu {
+    color: white;
+  }
+  
+  .hp-content {
+    text-align: center;
+    padding: 10px;
+  }
+}

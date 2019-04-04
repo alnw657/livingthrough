@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "317837841640",
+    "firebase_url": "https://livingtrough-40e8e.firebaseio.com",
+    "project_id": "livingtrough-40e8e",
+    "storage_bucket": "livingtrough-40e8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317837841640:android:3d5b1fbbe1795d09",
+        "android_client_info": {
+          "package_name": "com.livingthrough.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317837841640-vdajdvn042otcp8p671ookmo3263gikp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkFGF6LzT1yqbWmqmbJcQpId_1AvejjDc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
