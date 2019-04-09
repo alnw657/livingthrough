@@ -30,11 +30,14 @@ import { SurveyPage } from "../pages/survey/survey";
 import { EmailProvider } from '../providers/email/email';
 import { SingleItemPage } from '../pages/single-item/single-item';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { from } from 'rxjs/observable/from';
+
 import { HTTP } from '@ionic-native/http/ngx';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { ToastController } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
+import { ReactiveFormsModule } from '@angular/forms';
+import { environment } from '../environments/environment';
+
 // declare var require: any;
 @NgModule({
   declarations: [

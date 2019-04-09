@@ -13,7 +13,10 @@ import { FindProfessionalPage } from "../pages/find-professional/find-profession
 import { Http } from '@angular/http';
 import * as firebase from 'firebase';
 import { FIREBASE_CONFIG } from './firebase.credentials';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
 
 @Component({
   templateUrl: 'app.html'

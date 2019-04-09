@@ -6,11 +6,11 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { EmailComposer } from '@ionic-native/email-composer';
 import * as firebase from 'firebase';
 import { FIREBASE_CONFIG } from '../../app/firebase.credentials';
-import { from } from 'rxjs/observable/from';
+
 import { file } from 'babel-types';
 import { HTTP } from '@ionic-native/http';
 import { Http } from '@angular/http';
-import { window } from 'rxjs/operator/window';
+
 import { HttpModule } from '@angular/http'; 
 import {Request,RequestMethod} from "@angular/http";
 import { HttpClient,HttpHeaders } from '@angular/common/http';
@@ -18,6 +18,13 @@ import { RequestOptions } from '@angular/http';
 import { Headers } from '@angular/http';
 import { ToastController } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
+
+
+
+// Required for side-effects
+require("firebase/functions")
+
+import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
 
 /**
  * Generated class for the SafetyplanPage page.
@@ -32,7 +39,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'safetyplan.html',
 })
 export class SafetyplanPage {
-
+ 
   http: Http;
   mailgunUrl: string;
   mailgunApiKey: string;
@@ -85,41 +92,25 @@ export class SafetyplanPage {
     public navCtrl: NavController, 
     public navParams: NavParams,
     private emailComposer: EmailComposer,
-    http: Http
+    http: Http,
+  
     ) {
     this.http = http;
-    this.mailgunUrl = "https://api.mailgun.net/v3/sandboxa181778e44f04abd89de257e1b625882.mailgun.org";
-    // this.mailgunApiKey = window.btoa("api:key-b66da7dfdebc317cfd4a6cd8a470d443-e51d0a44-247ed433");
-
+   
     }
+
+
     send() {
-    
+  
+      var functions = firebase.functions();
+      
+
+      var sendMail = firebase.functions().httpsCallable('sendMail');
+      sendMail().then(function(result){
+        
+      })
        
-      var nodemailer = require('nodemailer');
-
-var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-           user: 'livingthroughteam@gmail.com',
-           pass: 'LvTh2018'
-       }
-   });
-
-   const mailOptions = {
-    from: 'sender@email.com', // sender address
-    to: 'alnw657@gmail.com', // list of receivers
-    subject: 'hfhfhfhfhfhhf', // Subject line
-    html: '<p>Your html here</p>'// plain text body
-  };
-
-  transporter.sendMail(mailOptions, function (err, info) {
-    if(err)
-      console.log(err)
-    else
-      console.log(info);
- });
-
-
+//    
 
       }
 
